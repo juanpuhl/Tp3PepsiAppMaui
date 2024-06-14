@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tp3PepsiApp.Views.LoginView"
+             Title="LoginView"
+              BackgroundColor="White"
+             NavigationPage.HasNavigationBar="False" >
+
+
+        <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+         
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Image x:Name="imageView5"
+               Source="logo_logo.png"
+               WidthRequest="250"
+               HeightRequest="110"
+               Margin="32,5,32,0"
+               Grid.Row="0"
+               Grid.Column="0"
+               HorizontalOptions="Center"
+               VerticalOptions="Start"/>
+
+            <Label x:Name="textView"
+               Text="Bienvenidos"
+                  TextColor="Black"
+               FontSize="35"
+               Margin="0,0,0,50"
+               Grid.Row="1"
+               Grid.Column="0"
+               HorizontalOptions="Center"
+               VerticalOptions="End"/>
+
+            <Image x:Name="imageView8"
+               Source="key_2.png"
+               WidthRequest="69"
+               HeightRequest="36"
+               Margin="0,35,0,44"
+               Grid.Row="2"
+               Grid.Column="0"
+               HorizontalOptions="Center"
+               VerticalOptions="End"/>
+
+            <Entry x:Name="editTextNombre"
+               Placeholder="Nombre de Usuario"
+               WidthRequest="200"
+               HeightRequest="48"
+               Margin="0,32,0,15"
+                   TextColor="Black"
+                   PlaceholderColor="Gray"
+               Grid.Row="3"
+               Grid.Column="0"
+               HorizontalOptions="Center"
+               VerticalOptions="Start"/>
+
+            <Entry x:Name="editTextPassword"
+               Placeholder="Contraseña"
+               WidthRequest="200"
+               HeightRequest="48"
+               IsPassword="True"
+               Margin="0,25,0,60"
+               TextColor="Black"
+               PlaceholderColor="Gray"
+               Grid.Row="4"
+               Grid.Column="0"
+               HorizontalOptions="Center"
+               VerticalOptions="Start"/>
+
+            <Button x:Name="btnIngresar"
+                Text="Ingresar"
+                BackgroundColor="#004883"
+                TextColor="White"
+                Margin="32,48,32,45"
+                Grid.Row="5"
+                Grid.Column="0"
+                HorizontalOptions="Center"
+                VerticalOptions="Start"
+                Clicked="BtnIngresar_Clicked"/>
+        </Grid>
+    </ContentPage>

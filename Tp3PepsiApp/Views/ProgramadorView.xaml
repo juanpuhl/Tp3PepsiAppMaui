@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tp3PepsiApp.Views.ProgramadorView"
+             Title="DatosProgramador"
+             BackgroundColor="White"
+             NavigationPage.HasNavigationBar="False">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Botón Cerrar -->
+        <Button x:Name="btnCerrar"
+                Text="Volver"
+                BackgroundColor="#E32934"
+                 TextColor="White"
+                WidthRequest="160"
+                HeightRequest="48"
+                Margin="25,48,60,0"
+                Grid.Row="0"
+                Grid.Column="0"
+                HorizontalOptions="Start"
+                VerticalOptions="Start"
+                Clicked="BtnCerrar_Clicked"/>
+
+        <!-- Imagen Pepsi -->
+        <Image x:Name="imageView"
+               Source="pepsi.png"
+               WidthRequest="87"
+               HeightRequest="62"
+               Margin="30,44,30,0"
+               Grid.Row="0"
+               Grid.Column="1"
+               HorizontalOptions="End"
+               VerticalOptions="Start"/>
+
+        <!-- Texto Datos Programador -->
+        <Label x:Name="textView2"
+               Text="Datos Programador"
+               FontSize="20"
+               FontAttributes="Bold"
+               TextColor="Black"
+               Margin="0,20,0,0"
+               Grid.Row="1"
+               Grid.ColumnSpan="2"
+               HorizontalOptions="Center"
+               VerticalOptions="Start"/>
+
+        <!-- Imagen del Programador -->
+        <Image x:Name="imageView2"
+               Source="img_20221018_173930_456.png"
+               WidthRequest="210"
+               HeightRequest="406"
+               Margin="16,30,0,0"
+               Grid.Row="2"
+               Grid.Column="0"
+               VerticalOptions="Start"/>
+
+        <!-- Nombre del Programador -->
+        <Label x:Name="textView4"
+               Text="Juan Puhl"
+               FontSize="16"
+               FontAttributes="Bold"
+               TextColor="Black"
+               Margin="15,136,0,0"
+               Grid.Row="2"
+               Grid.Column="1"
+               VerticalOptions="Start"
+               HorizontalOptions="Start"/>
+
+        <!-- Botón Llamar -->
+        <Button x:Name="btnLlamar"
+                Text="Llamar"
+                BackgroundColor="#004883"
+                 TextColor="White"
+                WidthRequest="130"
+                HeightRequest="48"
+                Margin="50,0,20,80"
+                Grid.Row="3"
+                Grid.Column="0"
+                HorizontalOptions="Start"
+                VerticalOptions="End"
+                Clicked="BtnLlamar_Clicked"/>
+
+        <!-- Botón Correo -->
+        <Button x:Name="btnMail"
+                Text="Correo"
+                BackgroundColor="#004883"
+                 TextColor="White"
+                WidthRequest="130"
+                HeightRequest="48"
+                Margin="20,0,50,80"
+                Grid.Row="3"
+                Grid.Column="1"
+                HorizontalOptions="End"
+                VerticalOptions="End"
+                Clicked="BtnMail_Clicked"/>
+    </Grid>
+</ContentPage>

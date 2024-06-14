@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tp3PepsiApp.Views.InicioView"
+             Title="InicioView"
+              BackgroundColor="White"
+             NavigationPage.HasNavigationBar="False" >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Image x:Name="imageView"
+               Source="pepsi.png"
+               WidthRequest="114"
+               HeightRequest="108"
+               Margin="30"
+               Grid.Row="0"
+               Grid.Column="0"
+               Grid.ColumnSpan="2"
+               HorizontalOptions="Center"
+               VerticalOptions="Start"/>
+
+        <Label x:Name="textView3"
+               Text="Pepsi está posicionado para crecer y alcanzar el primer puesto en el mercado
+               global de Alimnetos y Bebidas."
+               WidthRequest="278"
+               HeightRequest="95"
+               TextColor="#004883"
+               FontAttributes="Bold"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"
+               Grid.Row="1"
+               Grid.Column="0"
+               Grid.ColumnSpan="2"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"/>
+
+        <Image x:Name="imageView3"
+               Source="latas_pepsi.png"
+               WidthRequest="416"
+               HeightRequest="375"
+               Margin="0,0,0,-80"
+               Grid.Row="2"
+               Grid.Column="0"
+               Grid.ColumnSpan="2"
+               HorizontalOptions="Center"
+               VerticalOptions="End"/>
+
+        <Button x:Name="btnCerrar"
+                Text="Volver"
+                BackgroundColor="#E32934"
+                TextColor="White"
+                WidthRequest="120"
+                HeightRequest="48"
+                Margin="32,172,10,0"
+                Grid.Row="0"
+                Grid.Column="0"
+                Clicked="BtnVolverClicked"
+                HorizontalOptions="Start"
+                VerticalOptions="Start"
+              />
+
+        <Button x:Name="btnProgramador"
+                Text="Programador"
+                BackgroundColor="#004883"
+                 TextColor="White"
+                WidthRequest="120"
+                HeightRequest="48"
+                Margin="10,172,32,0"
+                Grid.Row="0"
+                Grid.Column="1"
+                Clicked="BtnProgramadorClicked"
+                HorizontalOptions="End"
+                VerticalOptions="Start"
+                />
+    </Grid>
+</ContentPage>
+
+
